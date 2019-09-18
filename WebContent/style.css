@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+*{
+	margin: 0px;
+	padding: 0px;	
+}
+
+body{	
+	background-color: rgb(234,234,234);
+}
+
+#session_left{
+	position: absolute;
+	left:0px;
+	top:0px;
+	width:auto;
+	height:auto;
+	padding:10px;
+	line-height: 25px;
+	background-color: rgb(255,255,255);
+	box-shadow: 1px 1px 3px rgb(121,121,121);
+}
+#id_session{
+	font-size:95%;
+	width:auto;
+	height:auto;
+	float:right;
+}
+
+#grandona{
+	width: 50%;
+	height: 400px;
+	background-color: rgb(255,255,255);
+	margin-left: 25%;
+	margin-top:25px;
+	box-shadow: 1px 1px 3px rgb(121,121,121);
+}
+
+#grandona-title{
+	width:100%;
+	height: 60px;
+	font-family: "Sans-serif";
+	font-size: 150%;
+	text-align:center;
+	line-height:60px;
+	border-bottom: solid 1px rgba(1,1,1,0.2);	
+}
+
+.form_div{
+	width:39.8%;
+	height:auto;
+	padding:5%;	
+	float:left;
+	border-bottom: solid 1px rgba(70,70,70, 0.5);
+	border-right: solid 1px rgba(70,70,70, 0.5);
+}
+
+.input_text{
+	width:100%;
+	height:26px;
+	float:left;
+	margin-bottom:10px;
+}
+
+.btnSubmit{
+	width:75px;
+	height:30px;
+	float:left;
+}
