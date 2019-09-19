@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,21 +8,8 @@
 </head>
 
 <body>
-	<div id="session_left">
-		<%
-			HttpSession sessao = request.getSession();
-			if(sessao.getAttribute("nome") == null){
-				out.print("Olá, Sr. Deslogado");
-				out.print("<br>Não há ID para a sessão");
-				out.print("<br>Sem tempo, irmão");
-			}else{
-				out.print("Olá, " + sessao.getAttribute("nome"));
-				out.print("<br>ID: <div id='id_session'>" + session.getId() + "</div>");
-				out.print("<br>Sua sessão expirará em " + sessao.getMaxInactiveInterval() + "s");
-				out.print("<br><a href='sessionDestroyServlet'>Sair</a>");
-			}
-		%>
-	</div>
+	
+	<jsp:include page="session_info.jsp" /> 	
 
 	<div id="grandona">
 		<div id="grandona-title">Session e Cookies</div>
@@ -32,8 +20,15 @@
 				<input type="number" name="tempo" class="input_text" placeholder="Tempo limite...">
 				<input type="submit" class="btnSubmit" value="Enviar">				
 			</div>
+			
+			<div class="form_div">
+				<p class="cookie_link"><a href="cookieLinkServlet?link=google">Google</a></p>
+				<p class="cookie_link"><a href="cookieLinkServlet?link=youtube">YouTube</a></p>
+				<p class="cookie_link"><a href="cookieLinkServlet?link=stackoverflow">StackOverflow</a></p>
+			</div>
 		</form>
 	</div>
+	
 </body>
 
 </html>
