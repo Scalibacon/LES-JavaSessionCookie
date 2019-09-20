@@ -29,7 +29,7 @@ body{
 
 #grandona{
 	width: 50%;
-	height: 400px;
+	height: 300px;
 	background-color: rgb(255,255,255);
 	margin-left: 25%;
 	margin-top:25px;
@@ -47,7 +47,7 @@ body{
 }
 
 .form_div{
-	width:39.8%;
+	width:39.85%;
 	height:auto;
 	padding:5%;	
 	float:left;
@@ -71,4 +71,17 @@ body{
 .cookie_link{
 	font-size: 100%;
 	margin-bottom: 18.5px;
+}
+
+#cookie_msg{
+	width: 30%;
+	height:auto;
+	padding: 15px;
+	font-size: 120%;
+	margin-left: 35%;
+	margin-top: 100px;
+	text-align:center;
+	line-height:50px;
+	background-color: white;
+	box-shadow: 1px 1px 3px rgb(121,121,121);
 }

@@ -17,12 +17,12 @@ public class SessionCreationServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
 		HttpSession sessao = request.getSession(true);
-		String nome = (String) request.getParameter("nome");
-		int tempo;
+		String nome = request.getParameter("nome");
 		
 		sessao.setAttribute("nome", nome);
+		
 		if(request.getParameter("tempo") != null && request.getParameter("tempo") != "") {
-			tempo = Integer.parseInt(request.getParameter("tempo"));
+			int tempo = Integer.parseInt(request.getParameter("tempo"));
 			sessao.setMaxInactiveInterval(tempo);
 		}
 		

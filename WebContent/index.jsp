@@ -12,7 +12,7 @@
 	<jsp:include page="session_info.jsp" /> 	
 
 	<div id="grandona">
-		<div id="grandona-title">Session e Cookies</div>
+		<div id="grandona-title">Session e <a href="outra.jsp" >Cookies</a></div>
 
 		<form action="sessionCreationServlet" method="post">
 			<div class="form_div">
@@ -22,9 +22,9 @@
 			</div>
 			
 			<div class="form_div">
-				<p class="cookie_link"><a href="cookieLinkServlet?link=google">Google</a></p>
-				<p class="cookie_link"><a href="cookieLinkServlet?link=youtube">YouTube</a></p>
-				<p class="cookie_link"><a href="cookieLinkServlet?link=stackoverflow">StackOverflow</a></p>
+				<p class="cookie_link"><a href="cookieLinkServlet?link=google" target="_blank">Google</a></p>
+				<p class="cookie_link"><a href="cookieLinkServlet?link=youtube" target="_blank">YouTube</a></p>
+				<p class="cookie_link"><a href="cookieLinkServlet?link=stackoverflow" target="_blank">StackOverflow</a></p>
 			</div>
 		</form>
 	</div>
