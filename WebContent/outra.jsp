@@ -13,9 +13,9 @@
 	<jsp:include page="session_info.jsp" />
 	<div id="cookie_msg">
 		<%
-			Cookie cookie = CookieLinkServlet.getCookie(request, "link");
-			if (cookie != null) {
-				out.print("Último link acessado: " + cookie.getValue());
+			Cookie cookieL = CookieLinkServlet.getCookie(request, "link");
+			if (cookieL != null) {
+				out.print("Último link acessado: " + cookieL.getValue());
 			} else {
 				out.print("Nenhum link acessado nas últimas 24h");
 			}

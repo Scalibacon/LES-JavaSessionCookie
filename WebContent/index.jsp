@@ -20,13 +20,12 @@
 				<input type="number" name="tempo" class="input_text" placeholder="Tempo limite...">
 				<input type="submit" class="btnSubmit" value="Enviar">				
 			</div>
-			
+		</form>
 			<div class="form_div">
 				<p class="cookie_link"><a href="cookieLinkServlet?link=google" target="_blank">Google</a></p>
 				<p class="cookie_link"><a href="cookieLinkServlet?link=youtube" target="_blank">YouTube</a></p>
 				<p class="cookie_link"><a href="cookieLinkServlet?link=stackoverflow" target="_blank">StackOverflow</a></p>
 			</div>
-		</form>
 	</div>
 	
 </body>
